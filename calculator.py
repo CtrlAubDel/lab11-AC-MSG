@@ -31,21 +31,20 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Can't divide by 0.")
+    if b == 0:
+        raise ZeroDivisionError
     else:
-        return a // b
+        return a / b
 
 def logarithm(a, b):
     
+    if b is None:
+        raise ValueError
     if a <= 0:
-        raise ValueError("A can not be less than 0.")
-        return
+        raise ValueError
     if b <= 1:
-        raise ValueError("B must be greater than 1.")
-        return
-    else:
-        return math.log(a, b)
+        raise ValueError
+    return math.log(a, b)
 
 def exp(a, b):
     return a ** b
