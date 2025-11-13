@@ -1,4 +1,4 @@
-# https://github.com/CtrlAubDel/lab11-AC-MSG
+# https://github.com/mvsg2311-web
 # Partner 1: Aubrey Corcoran
 # Partner 2: Mariana Silva Gomez
 
@@ -8,6 +8,14 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
+
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
 # First example
 import math
 
@@ -36,7 +44,6 @@ def div(a, b):
         return a // b
 
 def log(a, b):
-    
     if a <= 0:
         raise ValueError
         return
@@ -48,3 +55,4 @@ def log(a, b):
 
 def exp(a, b):
     return a ** b
+
