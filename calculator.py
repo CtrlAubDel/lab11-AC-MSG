@@ -36,7 +36,7 @@ def div(a, b):
     else:
         return a / b
 
-def logarithm(a, b):
+def logarithm(a, b=None):
     
     if b is None:
         raise ValueError
