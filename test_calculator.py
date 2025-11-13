@@ -32,16 +32,16 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(0, 100), 0)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(divide(10, 2), 5)
-        self.assertEqual(divide(-9, 3), -3)
-        self.assertAlmostEqual(divide(7, 3), 7/3)
+        self.assertEqual(div(10, 2), 5)
+        self.assertEqual(div(-9, 3), -3)
+        self.assertAlmostEqual(div(7, 3), 7/3)
     # ##########################
     ##########################
 
     ######## Partner 2
     def test_divide_by_zero(self):  # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            divide(10, 0)
+            div(10, 0)
 
     # def test_logarithm(self): # 3 assertions
     #     fill in code
